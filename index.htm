@@ -39,6 +39,7 @@
             font-size: 2.3em;
         }
         #quiz-sec{
+            width: 100%;
             min-height: 60%;
             text-align: center;
             display: grid;
@@ -67,14 +68,19 @@
         }
         #finish-btn button{
             width: 150px;
-            height: 25px;
+            min-height: 25px;
+            padding: 5px;
             border: 0;
         }
         #finish-btn button:hover{
             cursor: pointer;
             background-color: #fff;
-            border: 1px solid #999;
+            border: 0px solid #999;
             box-shadow: 0 0 1px #666;
+        }
+        .disabledbutton {
+            pointer-events: none;
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -91,7 +97,7 @@
                     <div>4.</div>
                 </div>
                 <div id="finish-btn">
-                    <button>finish</button>
+                    <button onclick="res()">Посмотреть ресультат</button>
                 </div>
             </div>
         </div>
